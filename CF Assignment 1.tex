@@ -1,0 +1,164 @@
+\documentclass{article}
+\usepackage[all]{xy}
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{color,soul}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{{./images}}
+\usepackage{setspace} % Required for changing line spacing
+%\doublespacing % Set the line spacing to double
+\usepackage{wrapfig}
+\usepackage[export]{adjustbox}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{parskip}
+\usepackage{csquotes} % Required for block quotes/inline quotation
+\usepackage{dirtytalk} % \say command for esy quoting
+\usepackage{enumitem} % Required for customizing lists/list spacing
+\usepackage{pdflscape} % Required for landscape orientation
+
+%\setlist{nosep} % this removes space between list items
+%\usepackage{bbold} % For sans serif expectations
+
+% Section Headings
+\usepackage{titlesec}
+%\titleformat*{\section}{\bfseries} % Small section titles
+\titlespacing\section{0pt}{*1}{*3} % Reduce space before and after section titles
+
+
+% Citation
+%\usepackage[backend=biber, style=authoryear, autocite=inline, citestyle=apa]{biblatex}
+%\addbibresource{./ME BibTeX.bib}
+\newcommand{\ac}{\autocite}
+\newcommand{\tc}{\textcite}
+
+
+% Hyperlinks
+\usepackage{hyperref} 
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={green!30!black},
+    urlcolor={blue!80!black}}
+
+% Shorthands for common maths commands
+\newcommand{\CE}{\mathbb{CE(L)}}
+\newcommand{\EV}{\mathbb{EV(L)}}
+\newcommand{\EU}{\mathbb{EU(L)}}
+\newcommand{\RP}{\mathbb{RP(L)}}
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\PP}{\mathbb{P}} 
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\FF}{\mathcal{F}} 
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
+
+\newcommand{\es}{\varnothing}
+\newcommand{\hash}{\texttt{\#}}
+\newcommand{\sima}{\overset{a}{\sim}}
+
+\newcommand{\MA}{\mathbf{A}}
+\newcommand{\MI}{\mathbf{I}}
+\newcommand{\MR}{\mathbf{R}}
+\newcommand{\Mr}{\mathbf{r}}
+\newcommand{\MS}{\mathbf{S}}
+\newcommand{\MY}{\mathbf{Y}}
+\newcommand{\MX}{\mathbf{X}}
+\newcommand{\vare}{\varepsilon}
+\newcommand{\Balpha}{\boldsymbol{\alpha}}
+\newcommand{\Bbeta}{\boldsymbol{\beta}}
+\newcommand{\Bbetahat}{\boldsymbol{\hat{\beta}}}
+\newcommand{\Bepsilon}{\boldsymbol{\varepsilon}}
+\newcommand{\BSigma}{\boldsymbol{\Sigma}}
+
+\newcommand{\sumn}{\sum_{i=1}^{n}}
+\newcommand{\sumk}{\sum_{i=1}^{k}}
+
+\newcommand{\CF}{\tilde{C}}
+
+
+% Define problem and solution environments
+\newtheorem{problem}{Problem}
+\newtheorem{question}{Question}
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+% Change numbering system to start at (a) and (i)
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{\roman{enumii}.}
+
+% Change for title page
+\title{CORPORATE FINANCE: \\Practical Work 1\\ Midland Energy Resources, Inc.}
+\author{Candidate Numbers: \\1066415, 1089335, \\1089335, 1089869}
+\date{\today}
+
+
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\hrulefill
+\section{Executive Summary}
+Midland Energy Resources (Midland hereafter) is  multinational energy company of more than 80,000 employees with an operating revenue and operating income of of $\$248.5$bn and $\$42.2$bn in 2006, respectively. The company has three main operating divisions: Exploration and Production (E\&P), Refining and Marketing (R\&M), and Petrochemicals. In the following, we provide the annual projected cost of capital (in the form of WACC) for the company as a whole and for each of its divisions in January 2007.
+
+In what follows, we find that the cost of equity, debt, and WACC for each division and the company as a whole are:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{llll}
+    \textbf{Division}                  & $r_E$    & $r_D$   & $r_{W\!ACC}$ \\ \hline
+    Exploration \& Production & 8.89\%  & 6.26\% & 6.57\%  \\
+    Refining and Marketing    & 8.94\%  & 6.46\% & 7.40\%  \\
+    Petrochemicals            & 12.40\% & 6.01\% & 8.92\%  \\ \hline
+    \textbf{Midland Energy}   & 9.41\%  & 6.28\% & 6.28\% 
+    \end{tabular}
+\end{table}\\
+Which result from an estimated effective tax rate ($\tau$) of 38.58\%, the risk-free rate ($r_F$) of 4.66\%, and an equity market risk premium ($EMRP$) of 3.6\%.
+
+\hrulefill
+\section{Valuation Methodology}
+Our method for valuation is as follows: to calculate the weighted average cost of capital for each division of Midland and the company as a whole ($r_{W\!ACC}$), where:
+\[r_{W\!ACC} = (1 - \tau)Lr_{D} + (1-L)r_E, \quad L=\frac{D}{V},\]
+requires estimates of paramaters including cost of debt and equity $(r_{D},r_{E})$, as well as the tax rate ($\tau$). Given Midland's constant target debt ratio for each division (4129), we can calculate the cost of equity from unlevelling the beta of comparable companies, 
+$$\beta_U=\beta_L(1-L_{comp})$$
+. The unlevered beta from comparables $\beta_U$ relevering using Midland and its divisions' debt ratio
+$$\beta_E=\frac{\beta_U}{1-L_{Midland}}$$
+and then netting $r_E$ via the formula:
+$$r_E=r_F+\beta_E(EMRP)$$
+The cost of debt can be calculated using the yield to maturity of Midland's outstanding bonds.
+
+\hrulefill
+\section{Parameter Estimation}
+\subsubsection*{Tax rate ($\tau$):}The rates of taxes that each division and Midland as a whole is subject to is not explicitly stated in the case. Given that 
+
+Further, given that for E\&P, by far the largest division of Midland, the geographical composition is mentioned to be shifting in 2007 to operation in Middle East, Central Asia, and Russia, with different tax regimes, we have elected to only use the estimates from the most recent year (2016). This assumption is supported by a trending decrease in the
+
+\subsubsection*{Risk-free rate ($r_F$):} The risk-free rate is estimated to be 4.66\% based on the 10-year U.S. Treasury yield in January 2007.
+
+\subsubsection*{Equity market risk premium ($EMRP$):} The equity market risk premium is estimated to be 3.6\%.
+
+Justification for market risk premium: all recent equity premium surveys for recent years around 2006  were between the 2-4 range, suggesting average from 1987-2006 period dragged up by high premia at the beginning of the period, also suggesting that rates have lowered since
+4Q result is 3.3\% from graham and harvey
+
+Choose to use EMRP of 3.6\% $\rightarrow$ average of 2.5-4.7\% and also equivalent to welch’s median
+
+
+\hrulefill
+\section{Divisional Cost of Capital}
+\subsection{E\&P}
+\subsection{R\&M}
+\subsection{Petrochemicals}
+
+\hrulefill
+\section{Overall Cost of Capital for Midland}
+
+\hrulefill
+\section{Further Considerations}
+This section is meant to serve the function of Janet Mortensen's ''user's guide" to the calculations and assumptions made in the previous sections. It will provide a brief overview of the assumptions made, the data used, and the limitations of the analysis.
+
+\end{document}
