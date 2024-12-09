@@ -17,6 +17,7 @@
 \usepackage{pdflscape} % Required for landscape orientation
 
 %\setlist{nosep} % this removes space between list items
+\AtBeginEnvironment{align*}{\useshortskip} % Reduce space between equations
 %\usepackage{bbold} % For sans serif expectations
 
 % Section Headings
@@ -105,7 +106,7 @@
 \newpage
 \hrulefill
 \section{Executive Summary}
-Midland Energy Resources (Midland hereafter) is  multinational energy company of more than 80,000 employees with an operating revenue and operating income of of $\$248.5$bn and $\$42.2$bn in 2006, respectively. The company has three main operating divisions: Exploration and Production (E\&P), Refining and Marketing (R\&M), and Petrochemicals. Historically, it has used discounted cash flow methodology to evaluate prospective investment, using a hurdle rate derived from the weighted average cost of capital (WACC) for the project or division. (4129)
+Midland Energy Resources (Midland hereafter) is  multinational energy company of more than 80,000 employees with an operating revenue and operating income of of $\$248.5$bn and $\$42.2$bn in 2006, respectively. The company has three main operating divisions: Exploration and Production (E\&P), Refining and Marketing (R\&M), and Petrochemicals. Historically, it has used discounted cash flow methodology to evaluate prospective investment, using a hurdle rate derived from the weighted average cost of capital (WACC) for the project or division. (p3)
 
 In the following, we provide the annual projected cost of capital (in the form of WACC) for the company as a whole and for each of its divisions in January 2007, as SVP for project finance Janet Mortensen has in previous years.
 We find that the cost of equity ($r_E$), debt ($r_D$), and WACC for each division and the company as a whole are:
@@ -119,20 +120,34 @@ We find that the cost of equity ($r_E$), debt ($r_D$), and WACC for each divisio
     \textbf{Midland Energy}   & 9.41\%  & 6.28\% & 6.28\% 
     \end{tabular}
 \end{table}\\
-which result from an estimated effective tax rate ($\tau$) of 38.58\%, the risk-free rate ($r_F$) of 4.66\%, and an equity market risk premium ($EMRP$) of 3.6\%.
+which result from an estimated effective tax rate ($\tau$) of 38.58\%, risk-free rate ($r_F$) of 4.66\%, and equity market risk premium ($EMRP$) of 3.6\%.
 
 \hrulefill
 \section{Valuation Methodology}
 Our method for valuation is as follows: to calculate the weighted average cost of capital for each division of Midland and the company as a whole ($r_{W\!ACC}$), where:
-\[r_{W\!ACC} = (1 - \tau)Lr_{D} + (1-L)r_E, \quad L=\frac{D}{V},\]
-requires estimates of paramaters including cost of debt and equity $(r_{D},r_{E})$, as well as the tax rate ($\tau$). Given Midland's constant target debt ratio for each division (4129), we can calculate the cost of equity from unlevelling the beta of comparable companies, 
-$$\beta_U=\beta_L(1-L_{comp})$$
-. The unlevered beta from comparables $\beta_U$ relevering using Midland and its divisions' debt ratio
-$$\beta_E=\frac{\beta_U}{1-L_{Midland}}$$
-and then netting $r_E$ via the formula:
-$$r_E=r_F+\beta_E(EMRP)$$
-The cost of debt can be calculated using the yield to maturity of Midland's outstanding bonds.
+\begin{equation}
+    r_{W\!ACC} = (1 - \tau)Lr_{D} + (1-L)r_E, \quad L=\frac{D}{V}, \quad V=D+E
+\end{equation}
+requires estimates of paramaters including cost of debt and equity $(r_{D},r_{E})$, as well as the tax rate ($\tau$). Given Midland's constant target debt ratio for each division (p4), we can calculate the cost of equity from unlevelling the beta of comparable companies, 
+\begin{equation}
+    \beta_U=\beta_L(1-L_{comp})
+\end{equation}
+given the significant assumption that the debt of comparable companies are riskless, which we justify in Section 3. The unlevered beta from comparables $\beta_U$ can then be relevering using Midland and its divisions' respective leverage ratios using formula (3):
+\begin{equation}
+    \beta_E=\frac{\beta_U}{1-L_{Midland}}=\frac{\beta_L\,(1-L_{comp})}{1-L_{Midland}}
+\end{equation} which then allows us to calculate $r_E$ via the CAPM formula:
+\begin{equation}
+    r_E=r_F+\beta_E\,(EMRP)
+\end{equation}
+our rataionale for our chosen values of $r_F$ and $EMRP$ are discussed in Section 3.
 
+For the cost of debt, we follow Mortensen's method of adding a spread, derived from estimated corresponding debt rating, to the appropriate US Treasury bonds (p5). We deem this to be the 10-Year YTM for US Treasury bonds of $4.66\%$ (also justified in section 3), which suggests that $r_D$ is given by:
+\begin{equation}
+    r_D=0.0466+STT
+\end{equation}
+Resulting shortfalls of this method are discussed in Section 6.
+
+\pagebreak
 \hrulefill
 \section{Parameter Estimation}
 \subsubsection*{Tax rate ($\tau$):}The rates of taxes that each division and Midland as a whole is subject to is not explicitly stated in the case. Given that 
@@ -148,13 +163,14 @@ Justification for market risk premium: all recent equity premium surveys for rec
 
 Choose to use EMRP of 3.6\% $\rightarrow$ average of 2.5-4.7\% and also equivalent to welch’s median
 
-
+\titlespacing\section{0pt}{*1}{*1}
 \hrulefill
 \section{Divisional Cost of Capital}
 \subsection{E\&P}
 \subsection{R\&M}
 \subsection{Petrochemicals}
 
+\titlespacing\section{0pt}{*1}{*3}
 \hrulefill
 \section{Overall Cost of Capital for Midland}
 
