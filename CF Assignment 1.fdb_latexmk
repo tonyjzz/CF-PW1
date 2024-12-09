@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1733712856.37191 "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.tex" "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.pdf" "CF Assignment 1" 1733712857.14587 0
-  "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.aux" 1733712857.0806 1265 ca1423411f9acc1222268429adca4926 "pdflatex"
-  "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.out" 1733712857.08122 1276 0c11cddb55ca41dbbd0ed3c81736950a "pdflatex"
-  "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.tex" 1733712856.18709 8044 21dfc065400c10848bc5e5ea4dad64d5 ""
+["pdflatex"] 1733717322.10205 "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.tex" "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.pdf" "CF Assignment 1" 1733717322.88762 0
+  "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.aux" 1733717322.8154 1265 1ef57c8317f4e6bea405c36e134104f9 "pdflatex"
+  "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.out" 1733717322.81602 1276 0c11cddb55ca41dbbd0ed3c81736950a "pdflatex"
+  "/Users/tj_zhang/Library/CloudStorage/OneDrive-SaïdBusinessSchool/4 CF/CF Notes/CF Assignment 1.tex" 1733717321.88104 10634 dcf6d22be80ef152fe90ea14fd22a2fe ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -47,6 +47,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -142,6 +143,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1665067230 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1704491087 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/ncctools/nccmath.sty" 1530651749 14585 b9ec0dfe305551751c94c3d416a3bea2 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/parskip/parskip.sty" 1615762720 4288 94714aa7f535440f33181fec52a31963 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty" 1667072951 6572 ea530fbbe537629fd97736d33babc07d ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty" 1667072951 2224 1230ab76aa62221ccbd90bca8c8c015e ""

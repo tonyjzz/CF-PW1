@@ -17,6 +17,7 @@
 \usepackage{pdflscape} % Required for landscape orientation
 
 %\setlist{nosep} % this removes space between list items
+\usepackage{nccmath}
 \AtBeginEnvironment{align*}{\useshortskip} % Reduce space between equations
 %\usepackage{bbold} % For sans serif expectations
 
@@ -132,7 +133,7 @@ requires estimates of paramaters including cost of debt and equity $(r_{D},r_{E}
 \begin{equation}
     \beta_U=\beta_L(1-L_{comp})
 \end{equation}
-given the significant assumption that the debt of comparable companies are riskless, which we justify in Section 3. The unlevered beta from comparables $\beta_U$ can then be relevering using Midland and its divisions' respective leverage ratios using formula (3):
+given the significant assumption that the debt of comparable companies are riskless, which we justify in Section 3. The unlevered beta from comparables $\beta_U$ can then be relevering using Midland and its divisions' respective leverage ratios using formula (3) [THIS IS WRONG, FIX THIS].:
 \begin{equation}
     \beta_E=\frac{\beta_U}{1-L_{Midland}}=\frac{\beta_L\,(1-L_{comp})}{1-L_{Midland}}
 \end{equation} which then allows us to calculate $r_E$ via the CAPM formula:
@@ -163,11 +164,73 @@ Justification for market risk premium: all recent equity premium surveys for rec
 
 Choose to use EMRP of 3.6\% $\rightarrow$ average of 2.5-4.7\% and also equivalent to welch’s median
 
+\subsubsection*{Leverage Ratios ($L_{E\&P},L_{R\&M}, L_{Pet}, L_{Mid}$):} 
+
 \titlespacing\section{0pt}{*1}{*1}
 \hrulefill
 \section{Divisional Cost of Capital}
 \subsection{E\&P}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lllll}
+    \hline
+    \textbf{E\&P Comparables}            & $D/E$     & $L_c$    & $\beta_L$ & $\beta_U$ \\ \hline
+    Jackson Energy, Inc.   & 11.19\% & 10.06\% & 0.89    & 0.80    \\
+    Wide Palin Petroleum   & 85.43\% & 46.07\% & 1.21    & 0.65    \\
+    Corsicana Energy Corp. & 15.24\% & 13.23\% & 1.11    & 0.96    \\
+    Worthington Petroleum  & 47.47\% & 32.19\% & 1.39    & 0.94\\\hline
+    \textbf{Average}  &  &  &    & 0.84   
+    \end{tabular}
+    \end{table}
+Given our paramater estimates and equations (3) and (4), we can calculate the cost of equity for E\&P:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{llllll}
+            \hline
+        $\beta_U$ & $L_{E\&P}$ & $\beta_E$ & $r_F$  & $EMRP$ & $r_E$  \\\hline
+        0.84      & 59.28\% & 1.18      & 4.66\% & 3.60\% & 8.89\%
+    \end{tabular}
+    \end{table}\\
+Cost of debt is calculated using equation (5) a 1.60\% spread (from Table 1):
+
+\begin{align*}
+    r_D&=4.66\%+1.60\%\\
+    &=6.26\%
+\end{align*}
+Therefore, from (1) we know that the WACC for E\&P is:
+\begin{align*}
+        r_{W\!ACC,\,E\&P} &= (1-L_{E\&P})r_E+(1 - \tau)L_{E\&P}\,r_{D}
+        \\&= (1-0.5928)(8.89\%)+(1-0.3858)(0.5928)(6.26\%)
+        \\&= 6.57\%
+\end{align*}
+\pagebreak
 \subsection{R\&M}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lllll}
+        \hline
+    \textbf{R\&M Comparables}   & $D/E$   & $L_c$    & $\beta_L$ & $\beta_U$ \\\hline
+    Bexar Energy, Inc.     & 10.3\%  & 9.32\%   & 1.70      & 1.54      \\
+    Kirk Corp.             & 19.4\%  & 16.23\%  & 0.94      & 0.79      \\
+    White Point Energy     & 20.9\%  & 17.30\%  & 1.78      & 1.47      \\
+    Petrarch Fuel Services & -12.0\% & -13.66\% & 0.24      & 0.27      \\
+    Arkana Petroleum Corp. & 32.3\%  & 24.41\%  & 1.25      & 0.94      \\
+    Beaumont Energy, Inc.  & 20.6\%  & 17.11\%  & 1.04      & 0.86      \\
+    Dameron Fuel Services  & 50.3\%  & 33.45\%  & 1.42      & 0.95 \\ \hline
+    \textbf{Average}        &         &          &           & 0.98
+    \end{tabular}
+    \end{table}
+Given our paramater estimates and equations (3) and (4), we can calculate the cost of equity for R\&M:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{llllll}
+            \hline
+        $\beta_U$ & $L_{R\&M}$ & $\beta_E$ & $r_F$  & $EMRP$ & $r_E$  \\\hline
+        0.98      & 59.28\% & 1.18      & 4.66\% & 3.60\% & 8.89\%
+    \end{tabular}
+    \end{table}
+   [FIX THE VALUES OF THE TABLE] 
 \subsection{Petrochemicals}
 
 \titlespacing\section{0pt}{*1}{*3}

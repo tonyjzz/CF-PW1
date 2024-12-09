@@ -165,6 +165,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadat
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ncctools/nccmath.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ncctools/nccmath.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -295,4 +297,5 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
